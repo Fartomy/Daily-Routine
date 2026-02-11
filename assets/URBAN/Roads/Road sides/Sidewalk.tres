@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://s7um15hd5gtc"]
+
+[ext_resource type="Texture2D" uid="uid://tr62h65jssgn" path="res://assets/URBAN/Roads/Road sides/road_side_corner_sidewalk.jpg" id="1_lrae6"]
+
+[resource]
+resource_name = "Sidewalk"
+cull_mode = 2
+albedo_texture = ExtResource("1_lrae6")
+albedo_texture_force_srgb = true
+texture_filter = 2

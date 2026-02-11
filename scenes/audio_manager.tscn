@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://b7vl20hbe8qpn"]
+
+[ext_resource type="Script" uid="uid://hlyghyal7w5r" path="res://scripts/audio_manager.gd" id="1_8qd8g"]
+[ext_resource type="AudioStream" uid="uid://cvc1tvnp70101" path="res://sounds/mix_city_bg.mp3" id="2_liach"]
+[ext_resource type="AudioStream" uid="uid://crknnd02hh8gy" path="res://sounds/car_horns.mp3" id="3_3asnw"]
+
+[node name="Audio Manager" type="Node" node_paths=PackedStringArray("clips")]
+script = ExtResource("1_8qd8g")
+clips = NodePath("Clips")
+
+[node name="Clips" type="Node" parent="."]
+
+[node name="Main" type="AudioStreamPlayer" parent="Clips"]
+stream = ExtResource("2_liach")
+
+[node name="Horns" type="AudioStreamPlayer" parent="Clips"]
+stream = ExtResource("3_3asnw")

@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://ccj886hwkf2ku"]
+
+[ext_resource type="Texture2D" uid="uid://ccw6dj4dn2x7d" path="res://assets/URBAN/Roads/Road type 1/road_1_corner_road1_alt.png" id="1_8i3cq"]
+
+[resource]
+resource_name = "Road"
+cull_mode = 2
+albedo_texture = ExtResource("1_8i3cq")
+albedo_texture_force_srgb = true
+texture_filter = 2

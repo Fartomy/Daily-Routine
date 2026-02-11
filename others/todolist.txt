@@ -1,0 +1,9 @@
+[Optimizasyon icin yapilanlar]
+1. meshinstance'larin visilibity range ozelliginde ki 'end' mesafesi 160m yapildi
+yani karaktere 160 metreden fazla uzak bir obje varsa obje gorunurlugunu kapatiyor
+2. LOD Bias 0.1 uygulandu tum meshintance'lere 
+(yesıl ve lacıvert arabalara 0.5 uygulandı. karakter belirli bir mesafeden LOD'un uygulandığını görebiliyordu)
+3. Golgeler devre disi birakildi
+4. Occluder Instance kullanilarak obje arkasi objelerin devre disi birakilmasi saglandi
+5. Resolution Scaling; project settings -> window: viewport height/width ayarlari ve stretch ve mode
+ayarlari degistirilerek dusuruldu

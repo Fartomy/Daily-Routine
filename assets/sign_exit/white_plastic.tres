@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://24r4sd6phd33"]
+
+[ext_resource type="Texture2D" uid="uid://b3ucsbq37wiq1" path="res://assets/sign_exit/sign_exit_white_plastic.png" id="1_xllq6"]
+
+[resource]
+resource_name = "white_plastic"
+cull_mode = 2
+albedo_color = Color(0.1307373, 0.1328125, 0.13077621, 1)
+albedo_texture = ExtResource("1_xllq6")
+roughness = 0.5

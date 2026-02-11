@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://gj5oq43xyerj"]
+
+[ext_resource type="Texture2D" uid="uid://cgp5uk6iqhpie" path="res://assets/sign_exit/sign_exit_exit.jpg" id="1_xvtxc"]
+
+[resource]
+resource_name = "exit"
+cull_mode = 2
+albedo_color = Color(0.19500732, 1, 0.1484375, 1)
+albedo_texture = ExtResource("1_xvtxc")
+roughness = 0.5

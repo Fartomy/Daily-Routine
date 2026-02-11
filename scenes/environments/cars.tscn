@@ -1,0 +1,62 @@
+[gd_scene load_steps=12 format=3 uid="uid://r0526djcnwox"]
+
+[ext_resource type="ArrayMesh" uid="uid://jymyhhn75dn7" path="res://assets/PSX_Style_Cars_by_GGBot_(August2023)/Car 01/Car.obj" id="1_0powi"]
+[ext_resource type="ArrayMesh" uid="uid://b7xi5a6bdll2b" path="res://assets/PSX_Style_Cars_by_GGBot_(August2023)/Car 02/Car2.obj" id="2_a2kor"]
+[ext_resource type="Texture2D" uid="uid://cjxrippnlscvf" path="res://assets/PSX_Style_Cars_by_GGBot_(August2023)/Car 03/car3_yellow.png" id="3_f7rcp"]
+[ext_resource type="ArrayMesh" uid="uid://38o5eap4bd5f" path="res://assets/PSX_Style_Cars_by_GGBot_(August2023)/Car 03/Car3.obj" id="4_d5agn"]
+[ext_resource type="ArrayMesh" uid="uid://bpdan36jwhmq7" path="res://assets/PSX_Style_Cars_by_GGBot_(August2023)/Car 04/Car4.obj" id="5_8k2nh"]
+[ext_resource type="ArrayMesh" uid="uid://dlfbjhi1cf0hp" path="res://assets/PSX_Style_Cars_by_GGBot_(August2023)/Car 05/Car5.obj" id="6_3esyg"]
+[ext_resource type="ArrayMesh" uid="uid://b5fw0g37wh6yj" path="res://assets/PSX_Style_Cars_by_GGBot_(August2023)/Car 05/Car5_Police.obj" id="7_drgun"]
+[ext_resource type="ArrayMesh" uid="uid://2c3b32rkoqpe" path="res://assets/PSX_Style_Cars_by_GGBot_(August2023)/Car 05/Car5_Taxi.obj" id="8_v054r"]
+[ext_resource type="ArrayMesh" uid="uid://dc103hh2yaj2n" path="res://assets/PSX_Style_Cars_by_GGBot_(August2023)/Car 06/Car6.obj" id="9_s5gaw"]
+[ext_resource type="ArrayMesh" uid="uid://bfufeqst7dp3m" path="res://assets/PSX_Style_Cars_by_GGBot_(August2023)/Car 08/Car8.obj" id="10_qaj2f"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c15v2"]
+albedo_texture = ExtResource("3_f7rcp")
+
+[node name="Cars" type="Node3D"]
+
+[node name="Car" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_0powi")
+skeleton = NodePath("../..")
+
+[node name="Car2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+mesh = ExtResource("2_a2kor")
+skeleton = NodePath("../..")
+
+[node name="Car3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
+material_override = SubResource("StandardMaterial3D_c15v2")
+mesh = ExtResource("4_d5agn")
+skeleton = NodePath("../..")
+
+[node name="Car4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+mesh = ExtResource("5_8k2nh")
+skeleton = NodePath("../..")
+
+[node name="Car5" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+mesh = ExtResource("6_3esyg")
+skeleton = NodePath("../..")
+
+[node name="Car5Police" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 0)
+mesh = ExtResource("7_drgun")
+skeleton = NodePath("../..")
+
+[node name="Car5Taxi" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, 0)
+mesh = ExtResource("8_v054r")
+skeleton = NodePath("../..")
+
+[node name="Car6" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
+mesh = ExtResource("9_s5gaw")
+skeleton = NodePath("../..")
+
+[node name="Car8" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 0)
+mesh = ExtResource("10_qaj2f")
+skeleton = NodePath("../..")

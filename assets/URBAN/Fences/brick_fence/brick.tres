@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://pde8yrubbgv0"]
+
+[ext_resource type="Texture2D" uid="uid://cwbfru8w3b0bm" path="res://assets/URBAN/Fences/brick_fence/brick_wall_brick_wall.jpg" id="1_fuica"]
+
+[resource]
+resource_name = "brick"
+cull_mode = 2
+albedo_texture = ExtResource("1_fuica")
+uv1_triplanar = true
+texture_filter = 2
